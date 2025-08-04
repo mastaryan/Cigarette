@@ -1,15 +1,162 @@
-<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="favicon.ico"><meta name="generator" content="Astro v4.9.2"><title>Contacts</title><link href="css/bootstrap.css" rel="stylesheet"><link href="css/font-awesome.css" rel="stylesheet"><link href="css/prettyPhoto.css" rel="stylesheet"><link href="css/animate.css" rel="stylesheet"><link href="css/style.css" rel="stylesheet"><link href="css/style.css" rel="stylesheet"><link rel="stylesheet" href="_astro/boats.CkZZvh9-.css"></head> <body> <script src="js/jquery.js"></script> <script src="js/jquery-migrate-1.2.1.min.js"></script> <script src="js/jquery.easing.1.3.js"></script> <script src="js/superfish.js"></script> <script src="js/bootstrap.min.js"></script> <script src="js/yjsg.yjsgroundprogress.js"></script> <script src="js/jquery.sticky.js"></script> <script src="js/jquery.queryloader2.js"></script> <script src="js/jquery.appear.js"></script> <script src="js/jquery.ui.totop.js"></script> <script src="js/jquery.caroufredsel.js"></script> <script src="js/jquery.touchSwipe.min.js"></script> <script src="js/jquery.parallax-1.1.3.resize.js"></script> <script src="js/jquery.prettyPhoto.js"></script> <script src="js/scripts.js"></script>  <div id="main" class="multipage not-front contacts-page"> <div id="top"> <!-- <NavbarReact title={title} /> --><header class="tw-flex tw-flex-col tw-top-0 tw-left-0 tw-z-50 tw-w-full tw-bg-gray-900/30 tw-pt-12"> <div class="tw-flex tw-h-16 tw-items-center tw-justify-between tw-px-4 md:tw-px-6 tw-w-full"> <a href="index.html" class="tw-flex tw-items-center tw-gap-2 tw-grow"> <img src="images/logo.png" alt="" width="200" height="50" class="tw-img-responsive"> </a> <nav class="tw-hidden tw-items-center tw-gap-8 md:tw-flex"> <a href="index.html" class="tw-text-2xl tw-text-white hover:tw-text-white tw-font-semibold hover:tw-underline hover:tw-underline-offset-4">
-Home
-</a> <a href="contacts.html" class="tw-text-2xl tw-text-white hover:tw-text-white tw-font-semibold hover:tw-underline hover:tw-underline-offset-4">
-Contact
-</a> <a href="boats.html" class="tw-text-2xl tw-text-white hover:tw-text-white tw-font-semibold hover:tw-underline hover:tw-underline-offset-4">
-Boat Models
-</a> </nav> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();;(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="1tzgcG" component-url="/_astro/NavButton.DExkKyWo.js" component-export="default" renderer-url="/_astro/client.DWgV2qfo.js" props="{}" ssr="" client="only" opts="{&quot;name&quot;:&quot;NavButton&quot;,&quot;value&quot;:&quot;react&quot;}"></astro-island> </div> <h1 class="tw-text-5xl tw-font-bold tw-text-slate-850 dark:tw-text-slate-50 tw-text-center tw-w-full tw-py-8">  </h1> </header> </div> <div class="breadcrumbs1_wrapper"> <div class="container"> <div class="breadcrumbs1"> <a href="index.html">Home</a><span>/</span>contact us
-</div> </div> </div> <div id="content"> <div class="container"> <h1>DON’T HESITATE CONTACT US</h1> <div class="row"> <div class="tw-self-stretch"> <div class="content-part"> <div id="note"></div> <div id="fields"> <form id="ajax-contact-form" class="form-horizontal" action="https://us-central1-email-sender-424315.cloudfunctions.net/send-email" method="POST"> <div class="row"> <div id="form-errors"></div> </div> <div class="row"> <div class="col-sm-6"> <div class="form-group"> <label for="inputName">Your Name</label> <input type="text" class="form-control" id="inputName" name="name" required placeholder="Full Name"> </div> </div> <div class="col-sm-6"> <div class="form-group"> <label for="inputEmail">Email</label> <input type="text" class="form-control" id="inputEmail" name="email" required placeholder="Email"> </div> </div> </div> <div class="row"> <div class="col-sm-12"> <div class="form-group"> <label for="inputSubject">Subject</label> <input type="text" class="form-control" id="inputSubject" name="subject" required placeholder="Subject"> </div> </div> </div> <div class="row"> <div class="col-sm-12"> <div class="form-group"> <label for="inputMessage">Your Message</label> <textarea class="form-control" rows="10" id="inputMessage" required name="message" placeholder="Message"></textarea> </div> </div> </div> <button class="btn-default btn-cf-submit">Send message</button> </form> <!-- <div class="checkbox">
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="Astro description" name="description"/>
+  <meta content="width=device-width" name="viewport"/>
+  <link href="favicon.ico" rel="icon" type="image/svg+xml"/>
+  <meta content="Astro v4.9.2" name="generator"/>
+  <title>
+   Contacts
+  </title>
+  <link href="css/bootstrap.css" rel="stylesheet"/>
+  <link href="css/font-awesome.css" rel="stylesheet"/>
+  <link href="css/prettyPhoto.css" rel="stylesheet"/>
+  <link href="css/animate.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="_astro/boats.CkZZvh9-.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <script src="js/jquery.js">
+  </script>
+  <script src="js/jquery-migrate-1.2.1.min.js">
+  </script>
+  <script src="js/jquery.easing.1.3.js">
+  </script>
+  <script src="js/superfish.js">
+  </script>
+  <script src="js/bootstrap.min.js">
+  </script>
+  <script src="js/yjsg.yjsgroundprogress.js">
+  </script>
+  <script src="js/jquery.sticky.js">
+  </script>
+  <script src="js/jquery.queryloader2.js">
+  </script>
+  <script src="js/jquery.appear.js">
+  </script>
+  <script src="js/jquery.ui.totop.js">
+  </script>
+  <script src="js/jquery.caroufredsel.js">
+  </script>
+  <script src="js/jquery.touchSwipe.min.js">
+  </script>
+  <script src="js/jquery.parallax-1.1.3.resize.js">
+  </script>
+  <script src="js/jquery.prettyPhoto.js">
+  </script>
+  <script src="js/scripts.js">
+  </script>
+  <div class="multipage not-front contacts-page" id="main">
+   <div id="top">
+    <!-- <NavbarReact title={title} /> -->
+    <header class="tw-flex tw-flex-col tw-top-0 tw-left-0 tw-z-50 tw-w-full tw-bg-gray-900/30 tw-pt-12">
+     <div class="tw-flex tw-h-16 tw-items-center tw-justify-between tw-px-4 md:tw-px-6 tw-w-full">
+      <a class="tw-flex tw-items-center tw-gap-2 tw-grow" href="index.html">
+       <img alt="" class="tw-img-responsive" height="50" src="images/logo.png" width="200"/>
+      </a>
+      <nav class="tw-hidden tw-items-center tw-gap-8 md:tw-flex">
+       <a class="tw-text-2xl tw-text-white hover:tw-text-white tw-font-semibold hover:tw-underline hover:tw-underline-offset-4" href="index.html">
+        Home
+       </a>
+       <a class="tw-text-2xl tw-text-white hover:tw-text-white tw-font-semibold hover:tw-underline hover:tw-underline-offset-4" href="contacts.html">
+        Contact
+       </a>
+       <a class="tw-text-2xl tw-text-white hover:tw-text-white tw-font-semibold hover:tw-underline hover:tw-underline-offset-4" href="boats.html">
+        Boat Models
+       </a>
+      </nav>
+      <style>
+       astro-island,astro-slot,astro-static-slot{display:contents}
+      </style>
+      <script>
+       (()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();;(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();
+      </script>
+      <astro-island client="only" component-export="default" component-url="/_astro/NavButton.DExkKyWo.js" opts='{"name":"NavButton","value":"react"}' props="{}" renderer-url="/_astro/client.DWgV2qfo.js" ssr="" uid="1tzgcG">
+      </astro-island>
+     </div>
+     <h1 class="tw-text-5xl tw-font-bold tw-text-slate-850 dark:tw-text-slate-50 tw-text-center tw-w-full tw-py-8">
+     </h1>
+    </header>
+   </div>
+   <div class="breadcrumbs1_wrapper">
+    <div class="container">
+     <div class="breadcrumbs1">
+      <a href="index.html">
+       Home
+      </a>
+      <span>
+       /
+      </span>
+      contact us
+     </div>
+    </div>
+   </div>
+   <div id="content">
+    <div class="container">
+     <h2>
+      DON’T HESITATE CONTACT US
+     </h2>
+     <div class="row">
+      <div class="tw-self-stretch">
+       <div class="content-part">
+        <div id="note">
+        </div>
+        <div id="fields">
+         <form action="https://us-central1-email-sender-424315.cloudfunctions.net/send-email" class="form-horizontal" id="ajax-contact-form" method="POST">
+          <div class="row">
+           <div id="form-errors">
+           </div>
+          </div>
+          <div class="row">
+           <div class="col-sm-6">
+            <div class="form-group">
+             <label for="inputName">
+              Your Name
+             </label>
+             <input class="form-control" id="inputName" name="name" placeholder="Full Name" required="" type="text"/>
+            </div>
+           </div>
+           <div class="col-sm-6">
+            <div class="form-group">
+             <label for="inputEmail">
+              Email
+             </label>
+             <input class="form-control" id="inputEmail" name="email" placeholder="Email" required="" type="text"/>
+            </div>
+           </div>
+          </div>
+          <div class="row">
+           <div class="col-sm-12">
+            <div class="form-group">
+             <label for="inputSubject">
+              Subject
+             </label>
+             <input class="form-control" id="inputSubject" name="subject" placeholder="Subject" required="" type="text"/>
+            </div>
+           </div>
+          </div>
+          <div class="row">
+           <div class="col-sm-12">
+            <div class="form-group">
+             <label for="inputMessage">
+              Your Message
+             </label>
+             <textarea class="form-control" id="inputMessage" name="message" placeholder="Message" required="" rows="10"></textarea>
+            </div>
+           </div>
+          </div>
+          <button class="btn-default btn-cf-submit">
+           Send message
+          </button>
+         </form>
+         <!-- <div class="checkbox">
                               <label>
                                   <input type="checkbox"> Send a copy to my email address
                               </label>
-                          </div> --> <!-- <div class="row">
+                          </div> -->
+         <!-- <div class="row">
                           <div class="col-sm-12">
                               <div class="form-group capthca">
                                   <label for="inputCapthca" class="sr-only">Capthca</label>
@@ -21,7 +168,15 @@ Boat Models
                                   <img src="captcha/captcha.php" alt="">
                               </div>
                           </div>
-                      </div> --> </div> <div id="ajax-contact-form-status"></div> </div> </div> </div> <div class="col-sm-4"> <!-- <div class="sidebar-part">
+                      </div> -->
+        </div>
+        <div id="ajax-contact-form-status">
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-sm-4">
+      <!-- <div class="sidebar-part">
                     <h5>address</h5>
 
                     <p>
@@ -47,13 +202,56 @@ Boat Models
                     <p>
                         Monday to Friday from 09.00 to 18.00
                     </p>
-                </div> --> </div> </div> </div> </div> <div id="about"> <div class="container"> <div class="title1 animated" data-animation="fadeInUp" data-animation-delay="200">
-CONTACT US
-</div> <br><br> <div class="row"> <div class="col-sm-6"> <div class="about1 clearfix animated" data-animation="fadeInLeft" data-animation-delay="300"> <div class="text-center"> <div class="txt1">PAUL ISON</div> <a class="txt2 block" href="tel:6063058537"> (606) - 305 8537 </a> <a class="txt2 block" href="mailto:paul@cigarettekentucky.com">
-paul@cigarettekentucky.com
-</a> <span class="txt2 block"> 2540 KY-90 Bronston KY 42518 </span> </div> </div> </div> <div class="col-sm-6"> <div class="about1 clearfix animated" data-animation="fadeInUp" data-animation-delay="400"> <div class="text-center"> <div class="txt1">TIFFANY CRAWFORD</div> <a class="txt2 block" href="tel:6063058537"> (606) - 305 9636 </a> <a class="txt2 block" href="mailto:tiffany@cigarettekentucky.com">
-tiffany@cigarettekentucky.com
-</a> <span class="txt2 block"> 2540 KY-90 Bronston KY 42518 </span> </div> </div> </div> <!-- <div class="col-sm-4">
+                </div> -->
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="about">
+   <div class="container">
+    <div class="title1 animated" data-animation="fadeInUp" data-animation-delay="200">
+     CONTACT US
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+     <div class="col-sm-6">
+      <div class="about1 clearfix animated" data-animation="fadeInLeft" data-animation-delay="300">
+       <div class="text-center">
+        <div class="txt1">
+         PAUL ISON
+        </div>
+        <a class="txt2 block" href="tel:6063058537">
+         (606) - 305 8537
+        </a>
+        <a class="txt2 block" href="mailto:paul@cigarettekentucky.com">
+         paul@cigarettekentucky.com
+        </a>
+        <span class="txt2 block">
+         2540 KY-90 Bronston KY 42518
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="col-sm-6">
+      <div class="about1 clearfix animated" data-animation="fadeInUp" data-animation-delay="400">
+       <div class="text-center">
+        <div class="txt1">
+         TIFFANY CRAWFORD
+        </div>
+        <a class="txt2 block" href="tel:6063058537">
+         (606) - 305 9636
+        </a>
+        <a class="txt2 block" href="mailto:tiffany@cigarettekentucky.com">
+         tiffany@cigarettekentucky.com
+        </a>
+        <span class="txt2 block">
+         2540 KY-90 Bronston KY 42518
+        </span>
+       </div>
+      </div>
+     </div>
+     <!-- <div class="col-sm-4">
                       <div class="about1 clearfix animated" data-animation="fadeInRight" data-animation-delay="500">
                           <a href="#">
                               <div class="c1"><i class="fa fa-laptop"></i></div>
@@ -65,6 +263,20 @@ tiffany@cigarettekentucky.com
                               <div class="txt3">Learn More</div>
                           </a>
                       </div>
-                  </div> --> </div> <br><br> <!-- <div class="macs animated" data-animation="fadeInUp" data-animation-delay="600"><img
+                  </div> -->
+    </div>
+    <br/>
+    <br/>
+    <!-- <div class="macs animated" data-animation="fadeInUp" data-animation-delay="600"><img
                       src="images/macs.png" alt="" class="img-responsive">
-              </div> --> </div> </div>  <script src="js/cform.js"></script>  </body></html>
+              </div> -->
+   </div>
+  </div>
+  <script src="js/cform.js">
+  </script>
+  <div class="tw-my-12 tw-w-full tw-h-[450px] tw-rounded-xl overflow-hidden tw-shadow-lg">
+   <iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.7665695792602!2d-84.60875752465293!3d37.10663907216128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885d4b0065e661bf%3A0xa47bebc764ae0f62!2sISON%20MARINE!5e1!3m2!1sen!2sus!4v1754327799646!5m2!1sen!2sus" style="border:0;" width="100%">
+   </iframe>
+  </div>
+ </body>
+</html>

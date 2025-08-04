@@ -2791,3 +2791,13 @@ h5 {
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
+.tw-aspect-photo {
+  aspect-ratio: 1200 / 800;
+  object-fit: cover;
+}
+
+.tw-aspect-video {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
