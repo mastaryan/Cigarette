@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /404.html
-Allow: /
-
-Sitemap: https://www.cigarettekentucky.com/sitemap.xml
