@@ -263,8 +263,8 @@ th {
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  src: url('https://www.cigarettetennessee.com/fonts/glyphicons-halflings-regular.eot');
-  src: url('https://www.cigarettetennessee.com/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('https://www.cigarettetennessee.com/fonts/glyphicons-halflings-regular.woff') format('woff'), url('https://www.cigarettetennessee.com/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('https://www.cigarettetennessee.com/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('https://www.cigarettekentucky.com/fonts/glyphicons-halflings-regular.eot');
+  src: url('https://www.cigarettekentucky.com/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('https://www.cigarettekentucky.com/fonts/glyphicons-halflings-regular.woff') format('woff'), url('https://www.cigarettekentucky.com/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('https://www.cigarettekentucky.com/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
