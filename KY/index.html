@@ -3,7 +3,7 @@
 <head>
   <!-- Meta -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Title & SEO -->
   <title>Exclusive Cigarette Boat Dealer in Kentucky | Ison Marine</title>
@@ -17,7 +17,6 @@
 
   <!-- CSS (keep your local styles + optional Astro css) -->
   <link rel="stylesheet" href="/css/bootstrap.css" />
-  <!-- Removed local font-awesome.css to avoid conflicts; using FA6 CDN below -->
   <link rel="stylesheet" href="/css/prettyPhoto.css" />
   <link rel="stylesheet" href="/css/animate.css" />
   <link rel="stylesheet" href="/css/style.css" />
@@ -71,21 +70,53 @@
   }
   </script>
 
-  <!-- Mobile CTA click fix (prevents overlays from stealing taps) -->
+  <!-- Mobile CTA click fix -->
   <style>
     @media (max-width: 767px) {
-      .front-slider::before,
-      .front-slider::after,
+      .mission .mission_inner {
+        position: relative;
+        z-index: 10000;
+        pointer-events: none;
+      }
+      .mission .mission_inner .txt3 a,
+      .mission .mission_inner a.btn0,
+      .mission .mission_inner .btn-default {
+        pointer-events: auto;
+      }
       .mission_prev,
-      .mission_next,
-      .hero-overlay {
+      .mission_next {
         pointer-events: none !important;
       }
     }
-    .cta-clickfix { position: relative; z-index: 50; }
-    .cta-clickfix .btn0 { pointer-events: auto; }
   </style>
+  <style>
+  /* Mobile fixes for hero tap targets */
+  @media (max-width: 767px) {
+    /* 1) Remove the big invisible slide arrows on phones */
+    .mission_prev,
+    .mission_next {
+      display: none !important;      /* easiest, safest */
+      pointer-events: none !important;
+    }
+
+    /* 2) Put your content above any slider overlays */
+    #mission { position: relative; }
+    .mission .mission_inner {
+      position: relative;
+      z-index: 10000;                /* above slider layers */
+    }
+
+    /* 3) If any parent blocks taps, force-enable on actual links/buttons */
+    .mission .mission_inner a,
+    .mission .mission_inner .btn-default,
+    .mission .mission_inner .btn0 {
+      pointer-events: auto !important;
+    }
+  }
+</style>
+
 </head>
+
 
 <body>
   <!-- JS (keep your local includes) -->
