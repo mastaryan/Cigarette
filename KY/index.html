@@ -257,5 +257,42 @@
       </div>
     </div>
   </div> <!-- /.onepage.front -->
+  <script>
+  (function () {
+    // Select the two CTAs (adjust selectors if you renamed classes)
+    var ctas = document.querySelectorAll(
+      '.mission .mission_inner a.btn0, .mission .mission_inner .txt3 a'
+    );
+
+    // Ensure taps/clicks on these links don't get cancelled by slider scripts
+    ctas.forEach(function (a) {
+      // Kill any slider/touch handlers above us
+      ['touchstart','touchmove','touchend','click'].forEach(function (ev) {
+        a.addEventListener(ev, function (e) {
+          // stop slider listeners up the tree from hijacking
+          e.stopPropagation();
+          // on touch devices some libs call preventDefault() on parents,
+          // so we force navigation on click/tap end
+          if (ev === 'click' || ev === 'touchend') {
+            // small delay lets active state render then navigate
+            var href = a.getAttribute('href');
+            if (href && href !== '#') {
+              setTimeout(function(){ window.location.href = href; }, 0);
+            }
+          }
+        }, true); // capture phase to beat other listeners
+      });
+    });
+
+    // Optional: tell the carousel not to treat these as swipe areas
+    try {
+      var hero = document.querySelector('.mission .mission_inner');
+      if (hero) {
+        hero.style.touchAction = 'manipulation'; // prefer native taps over custom handlers
+      }
+    } catch (e) {}
+  })();
+</script>
+
 </body>
 </html>
