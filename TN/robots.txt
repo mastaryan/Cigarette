@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /404.html
 Allow: /
 
-Sitemap: https://www.cigarettekentucky.com/sitemap.xml
+Sitemap: https://www.cigarettetennessee.com/sitemap.xml
